@@ -67,29 +67,23 @@ return newArr;
 
 
 // Iteration 4 | Filter Out
-const original = ["cat", "dog", "fish", "bird", "cat", "fish"];
+const originalArr = ["cat", "dog", "fish", "bird", "cat", "fish"];
 const toRemove = ["cat", "dog"];
 
-function filterOut(arrStr, arrSomething) {
-  let filtArr = [];
-
-  if (arrStr.length === 0){
+function filterOut(originalArr, targetWords) {
+    
+  if (originalArr.length === 0){
     return null;
+    
   }
-  
 
-
-return arrStr.filter(plop => !arrSomething.includes(plop))
+return originalArr.filter(word => !targetWords.includes(word))
 
 }
 
+console.log(filterOut(originalArr,toRemove));
 
-const words = ["spray", "elite", "exuberant", "destruction", "present"];
 
-const result = words.filter((word) => !arrSomething.includes(word));
-
-console.log(result);
-// Expected output: Array ["exuberant", "destruction", "present"]
 
 
 
