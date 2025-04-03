@@ -67,7 +67,7 @@ return newArr;
 
 
 // Iteration 4 | Filter Out
-const originalArr = ["cat", "dog", "fish", "bird", "cat", "fish"];
+const original = ["cat", "dog", "fish", "bird", "cat", "fish"];
 const toRemove = ["cat", "dog"];
 
 function filterOut(originalArr, targetWords) {
@@ -81,7 +81,7 @@ return originalArr.filter(word => !targetWords.includes(word))
 
 }
 
-console.log(filterOut(originalArr,toRemove));
+console.log(filterOut(original,toRemove));
 
 
 
